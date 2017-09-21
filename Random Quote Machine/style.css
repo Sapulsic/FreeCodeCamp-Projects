@@ -1,0 +1,50 @@
+
+body, .flex-container, .title, .flex-quote-box {
+  display: flex;
+}
+
+body {
+  background-color: #65DEF1;
+  justify-content: center;
+  position: relative;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  color: #222E50;
+  margin: 0.313em;
+}
+
+.title h1 {
+  font-size: 1.563em;
+  margin-bottom: 5px;
+  padding-top: 5%;
+  flex: 1 1 auto;
+}
+
+.title h4 {
+  margin: 0 auto 25px;
+  font-size: 1em;
+}
+
+.title h4 a {
+  color: #0F5257;
+}
+
+.flex-quote-box {
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  width: 50px;
+  height: 50px;
+}
