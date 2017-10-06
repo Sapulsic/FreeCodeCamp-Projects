@@ -1,5 +1,5 @@
 
-body, .flex-container, .title, .flex-quote-box {
+body, .flex-container, .title, .flex-quote-box, .social-icons, .quote, .flex-button {
   display: flex;
 }
 
@@ -10,19 +10,19 @@ body {
 }
 
 .flex-container {
-  display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-content: center;
   width: 75%;
 }
 
 .title {
-  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   font-family: 'Poppins', sans-serif;
   color: #222E50;
-  margin: 0.313em;
+  margin: 5px;
 }
 
 .title h1 {
@@ -42,9 +42,46 @@ body {
 }
 
 .flex-quote-box {
-  display: flex;
+  flex-direction: column;
   justify-content: center;
-  background-color: #fff;
-  width: 50px;
-  height: 50px;
+  align-self: center;
+  background-color: #DCEDFF;
+  width: 50%;
+  height: 200px;
+  border-radius: 20px;
+}
+
+.quote {
+  justify-content: center;
+  align-self: center;
+  width: 80%;
+  height: 50%;
+}
+
+.social-icons {
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-left: 15%;
+}
+
+.social-icons a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-color: #94B0DA;
+  border-radius: 10px;
+
+  font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+}
+
+.social-icons a:hover {
+  background-color: #768cad;
+}
+
+.flex-button {
+  justify-content: flex-end;
+  margin-right: 15%;
 }
