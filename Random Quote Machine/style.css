@@ -1,5 +1,5 @@
 
-body, .flex-container, .title, .flex-quote-box, .social-icons, .quote, .flex-button {
+body, .flex-container, .title, .flex-quote-box, .flex-quote-box-bottom, .social-icons, .quote, .flex-button {
   display: flex;
 }
 
@@ -7,6 +7,18 @@ body {
   background-color: #65DEF1;
   justify-content: center;
   position: relative;
+}
+
+button {
+  background-color: #94B0DA;
+  border: none;
+  color: #fff;
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  text-decoration: none;
+  /*display: inline-block;*/
+  border-radius: 5px;
 }
 
 .flex-container {
@@ -46,8 +58,8 @@ body {
   justify-content: center;
   align-self: center;
   background-color: #DCEDFF;
-  width: 50%;
-  height: 200px;
+  width: 60%;
+  height: 300px;
   border-radius: 20px;
 }
 
@@ -58,30 +70,43 @@ body {
   height: 50%;
 }
 
-.social-icons {
+#quoteDisplay {
+  font-family: "Space Mono", sans-serif;
+  font-size: 1.250em;
+}
+
+.flex-quote-box-bottom {
   flex-direction: row;
   justify-content: flex-start;
-  margin-left: 15%;
+  align-self: center;
+  width: 80%;
+  height: 100px;
+  /*border-radius: 20px;*/
+}
+
+.social-icons {
+  align-self: center;
+  margin-top: 45px;
 }
 
 .social-icons a {
-  display: inline-block;
-  width: 35px;
-  height: 35px;
+  /*display: inline-block;*/
+  width: 40px;
+  height: 40px;
   background-color: #94B0DA;
-  border-radius: 10px;
+  border-radius: 5px;
+  margin-right: 12px;
 
-  font-size: 20px;
+  font-size: 25px;
 	color: #ffffff;
 	text-align: center;
-	line-height: 35px;
-}
-
-.social-icons a:hover {
-  background-color: #768cad;
+	line-height: 40px;
 }
 
 .flex-button {
-  justify-content: flex-end;
-  margin-right: 15%;
+  /*align-self: flex-end;*/
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.875em;
+  /*padding-left: 50%;*/
+  color: #fff;
 }
