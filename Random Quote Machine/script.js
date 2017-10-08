@@ -11,12 +11,14 @@ var quotes = [
   "Take my advice Rookie, you ever fall for a woman, make sure she's got balls. -Edward Buck"
 ]
 
+var quoteDisplay
+
 function newQuote() {
   var randomNumber = Math.floor(Math.random() * (quotes.length));
-  document.getElementById("quoteDisplay").innerHTML = quotes[randomNumber];
-
+  quoteDisplay = document.getElementById("quoteDisplay");
+  quoteDisplay.innerHTML = quotes[randomNumber];
 }
-
-$(".twitter-share").click(function(){
-   $(this).attr("href", 'https://twitter.com/intent/tweet?text=' + quoteDisplay);
+$(".twitter-share").click(function() {
+  console.log(quoteDisplay.innerHTML);
+   $(this).attr("href", 'https://twitter.com/intent/tweet?text=' + quoteDisplay.innerHTML);
  });
